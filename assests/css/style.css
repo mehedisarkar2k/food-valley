@@ -58,22 +58,34 @@ img {
   width: 100%;
 }
 
-.btn {
-  text-transform: uppercase;
-}
-
 /* *** *** *** global css *** *** *** */
 section {
   margin-bottom: 5rem;
 }
+.btn {
+  display: inline-block;
+  border: 0.2rem solid;
+  border-color: transparent;
+  outline: none;
+  background: linear-gradient(to right bottom, #e64a19, #ff7043);
+  box-shadow: 0 2px 4px #ff7043;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  color: #f2efea;
+  border-radius: 2rem;
+  transition: all.2S linear;
+}
+
+.btn:hover {
+  background: rgba(255, 112, 67, 0.1);
+  color: #e64a19;
+  border: 0.2rem solid #e64a19;
+}
 
 /* *** *** *** nav section *** *** *** */
-#banner {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/banner.jpg) bottom/cover fixed no-repeat;
-}
+
 #nav {
   width: 100%;
   display: flex;
@@ -158,3 +170,55 @@ section {
 }
 
 /* *** *** *** banner section*** *** *** */
+#banner {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/banner.jpg) bottom/cover fixed no-repeat;
+  display: flex;
+  color: #f2efea;
+  align-items: center;
+}
+
+#banner .text-area,
+#banner .image-area {
+  width: 50%;
+  /* height: 100%; */
+  margin: 0 4rem;
+  padding: 4rem 2rem;
+}
+
+#banner .text-area .main-title {
+  text-transform: capitalize;
+  font-size: 4.4rem;
+  letter-spacing: 0.2rem;
+  line-height: 5.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+#banner .text-area .main-title span {
+  color: #e64a19;
+}
+
+#banner .text-area p {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+#banner .image-area {
+  /* background: url(./img/group-bg.png) center/cover no-repeat; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner .image-area img {
+  padding: 4rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
