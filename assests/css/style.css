@@ -232,8 +232,13 @@ section {
   overflow: hidden;
   display: flex;
   width: 100%;
-  max-width: 112rem;
   margin: auto;
+  background: linear-gradient(
+    to top right,
+    rgba(230, 73, 25, 0.25),
+    rgba(230, 73, 25, 0.55)
+  );
+  padding-bottom: 0;
 }
 
 #about::before {
@@ -267,7 +272,7 @@ section {
 }
 
 #about .image-area img {
-  height: 45rem;
+  height: 50rem;
   width: auto;
 }
 
