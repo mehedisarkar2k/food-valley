@@ -411,3 +411,81 @@ section {
   text-decoration: underline;
   color: #f2efea;
 }
+
+/* *** *** *** *** *** *** */
+.contact-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./img/conatct-bg.jpg) center/cover fixed no-repeat;
+}
+
+#contact {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+#contact .order-form,
+#contact .contact-form {
+  width: 50%;
+  margin: 0 5rem;
+  border: 2px solid #777;
+  box-shadow: 4px 0 8px #777, -4px 0 8px #777;
+  border-radius: 2rem;
+}
+
+#contact form {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  padding: 2rem;
+}
+
+#contact h3 {
+  color: #f2efea;
+  margin: 2rem 2rem -1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+  font-weight: 300;
+}
+
+#contact form input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  margin: auto;
+  border-bottom: 2px solid #f2efea;
+  margin-bottom: 1rem;
+  color: #f2efea;
+}
+
+#contact form textarea {
+  background: transparent;
+  color: #f2efea;
+  width: 80%;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  border-bottom: 2px solid #f2efea;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+#contact form input.btn {
+  background: #e64a19;
+  display: block;
+  max-width: 60%;
+  border: none;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+}
+#contact form input.btn:hover {
+  background: transparent;
+}
