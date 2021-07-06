@@ -1,0 +1,63 @@
+/* *** *** *** Uses Data *** *** *** */
+/* Primary-color: #E64A19 */
+/* light Primary-color: #FF7043 */
+/* secondary-color: #2E7D32 */
+/* light secondary-color: #66BB6A */
+/* main white-color: #F2EFEA */
+/* main vlack-color: #1A181B */
+
+/* font-family: 'Grand Hotel', cursive; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* *** *** *** css reset *** *** *** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: #1a181b;
+}
+
+/* *** *** *** utilities classes *** *** *** */
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+/* *** *** *** global css *** *** *** */
+section {
+  margin-bottom: 5rem;
+}
