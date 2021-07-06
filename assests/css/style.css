@@ -263,8 +263,7 @@ section {
   background: linear-gradient(#ff7043, #e64a19);
 }
 
-#about .image-area,
-#about .text-area {
+#about .image-area {
   width: 50%;
   display: flex;
   align-items: center;
@@ -278,14 +277,44 @@ section {
 }
 
 #about .text-area {
+  width: 50%;
+  display: flex;
   flex-flow: column;
+  padding: 1rem 3rem;
+  color: #555;
 }
 
-#about .text-area h2,
+/* #about .text-area h2,
 #about .text-area p,
 #about .text-area .btn {
   margin-bottom: 2.5rem;
   text-align: justify;
+} */
+#about .text-area h2 {
+  display: inline-block;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+#about .text-area p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-left: 1rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+#about .text-area .speciality {
+  margin-left: 1rem;
+}
+
+#about .text-area .speciality ul li {
+  margin: 0.5rem 1rem;
+  text-transform: capitalize;
+}
+#about .text-area .btn {
+  width: 30%;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* *** *** *** recipies section*** *** *** */
@@ -333,6 +362,7 @@ section {
 
 #recipies .all-items .item {
   width: 33%;
+  height: 40rem;
   padding: 1.5rem;
   border-radius: 2.5rem;
   overflow: hidden;
@@ -369,50 +399,7 @@ section {
   border: none;
 }
 
-#footer {
-  padding: 3rem 5rem;
-  margin: auto;
-  width: 100%;
-  text-align: center;
-  background: #1a181b;
-  color: #f2efea;
-}
-
-#footer h2 {
-  display: inline-block;
-  border-bottom: 2px solid #2e7d32;
-  color: #2e7d32;
-  letter-spacing: 0.5rem;
-  margin: 2rem;
-}
-
-#footer p {
-  font-size: 1.8rem;
-  letter-spacing: 0.2rem;
-  text-align: center;
-  padding: 1rem;
-}
-
-#footer p span {
-  color: #e64a19;
-  font-style: italic;
-}
-#footer .links {
-  text-transform: capitalize;
-}
-#footer .links a {
-  color: #f2efea;
-  padding: 0.5rem 1rem;
-  letter-spacing: 0.2rem;
-  color: #2e7d32;
-}
-
-#footer .links a:hover {
-  text-decoration: underline;
-  color: #f2efea;
-}
-
-/* *** *** *** *** *** *** */
+/* *** *** *** contact Section *** *** *** */
 .contact-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(./img/conatct-bg.jpg) center/cover fixed no-repeat;
@@ -473,6 +460,7 @@ section {
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   border-bottom: 2px solid #f2efea;
+  padding: 0.5rem 1.5rem;
   margin: auto;
   margin-bottom: 1rem;
 }
@@ -488,4 +476,49 @@ section {
 }
 #contact form input.btn:hover {
   background: transparent;
+}
+
+/* *** *** *** Footer Section *** *** *** */
+
+#footer {
+  padding: 5rem;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  background: #1a181b;
+  color: #f2efea;
+}
+
+#footer h2 {
+  display: inline-block;
+  border-bottom: 2px solid #2e7d32;
+  color: #2e7d32;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#footer p {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#footer p span {
+  color: #e64a19;
+  font-style: italic;
+}
+#footer .links {
+  text-transform: capitalize;
+}
+#footer .links a {
+  color: #f2efea;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.2rem;
+  color: #2e7d32;
+}
+
+#footer .links a:hover {
+  text-decoration: underline;
+  color: #f2efea;
 }
