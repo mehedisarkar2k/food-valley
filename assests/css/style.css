@@ -28,7 +28,7 @@ body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   color: #1a181b;
-  position: fixed;
+  position: relative;
 }
 
 /* *** *** *** utilities classes *** *** *** */
@@ -60,8 +60,9 @@ img {
 
 /* *** *** *** global css *** *** *** */
 section {
-  margin-bottom: 5rem;
+  padding: 3rem 1.5rem;
 }
+
 .btn {
   display: inline-block;
   border: 0.2rem solid;
@@ -91,9 +92,11 @@ section {
   display: flex;
   align-items: center;
   padding: 1rem 3rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  z-index: 99;
 }
 
 #nav .logo {
@@ -221,4 +224,60 @@ section {
   width: 100%;
   object-fit: cover;
   border-radius: 100%;
+}
+
+/* *** *** *** about section*** *** *** */
+#about {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  max-width: 112rem;
+  margin: auto;
+}
+
+#about::before {
+  height: 10rem;
+  width: 10rem;
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(#ff7043, #e64a19);
+}
+#about::after {
+  height: 10rem;
+  width: 10rem;
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  right: -3rem;
+  border-radius: 50%;
+  background: linear-gradient(#ff7043, #e64a19);
+}
+
+#about .image-area,
+#about .text-area {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#about .image-area img {
+  height: 45rem;
+  width: auto;
+}
+
+#about .text-area {
+  flex-flow: column;
+}
+
+#about .text-area h2,
+#about .text-area p,
+#about .text-area .btn {
+  margin-bottom: 2.5rem;
+  text-align: justify;
 }
