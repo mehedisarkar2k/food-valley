@@ -100,7 +100,7 @@ section {
   z-index: 99;
 }
 
-#nav .logo {
+.logo {
   margin-right: auto;
   padding: 1rem;
   font-family: "Grand Hotel", cursive;
@@ -116,7 +116,7 @@ section {
 #nav .logo:hover {
   color: #2e7d32;
 }
-#nav .logo span {
+.logo span {
   color: #2e7d32;
   transition: 0.2s;
 }
